@@ -19,13 +19,13 @@ Instagram Clone with nextjs, typescript, tailwind CSS, Firebase v9, NextAuth, Re
 - **TailwindCss**: CSS Framework
 
 - **Firebase v9**: Realtime Database
--  
+
 - **Recoil**: state management library
 
 - **NextAuth**: Authentication
 
 - **Prettier** Code formatter
-- 
+
 - **Eslint**: Linter
 
 ### Folder structure
