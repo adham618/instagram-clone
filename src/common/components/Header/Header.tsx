@@ -1,19 +1,21 @@
 import Image from "next/image"
 import { HeartIcon, HomeIcon, MenuIcon, PaperAirplaneIcon, SearchIcon, UserGroupIcon } from '@heroicons/react/outline'
+import { useRouter } from "next/router"
 
 interface HeaderProps {
 
 }
 
 const Header = ({ }: HeaderProps) => {
+  const router = useRouter()
   return (
     <header className="shadow-sm border-b sticky top-0 bg-white z-50">
       <div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
         {/* Left -Logo */}
-        <div className="relative w-24 hidden lg:inline-grid cursor-pointer">
+        <div onClick={() => router.push('/')} className="relative w-24 hidden lg:inline-grid cursor-pointer">
           <Image src="/insta.svg" layout="fill" priority objectFit="contain" alt="logo" draggable="false" />
         </div>
-        <div className="relative w-8 lg:hidden cursor-pointer">
+        <div onClick={() => router.push('/')} className="relative w-8 lg:hidden cursor-pointer">
           <Image src="/insta-logo.svg" layout="fill" priority objectFit="contain" alt="logo" draggable="false" />
         </div>
         {/* Middle - Search input field */}
@@ -30,7 +32,7 @@ const Header = ({ }: HeaderProps) => {
         </div>
         {/* Right - Icons && Avatar */}
         <div className="flex items-center justify-end space-x-4">
-          <HomeIcon className="navBtn" />
+          <HomeIcon onClick={() => router.push('/')} className="navBtn" />
           <MenuIcon className="h-6 md:hidden cursor-pointer" />
           <div className="relative navBtn">
             <PaperAirplaneIcon className="rotate-45 " />
@@ -38,8 +40,8 @@ const Header = ({ }: HeaderProps) => {
           </div>
           <UserGroupIcon className="navBtn" />
           <HeartIcon className="navBtn" />
-          <div className="relative w-8 h-10">
-            <Image className="rounded-full cursor-pointer" layout="fill" priority objectFit="contain" src={"/photo.jpg"} alt="profile-pic" draggable="false" />
+          <div className="relative w-9 h-9 border-red-500 border-2 rounded-full p-[1.5px]">
+            <Image className="rounded-full cursor-pointer" layout="fill" priority objectFit="contain" src={"/assets/4.jpg"} alt="profile-pic" draggable="false" />
           </div>
         </div>
       </div>
