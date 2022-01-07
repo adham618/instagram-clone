@@ -7,7 +7,7 @@ import Modal from '../common/components/Modal/Modal'
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div className='bg-gray-50 h-screen overflow-y-scroll scrollbar-hide'>
       <Head>
         <title>Instagram</title>
         <meta name="description" content="Instagram-clone by Adham Tarek" />
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <Header />
       <Feed />
       <Modal />
-    </>
+    </div>
   )
 }
 
