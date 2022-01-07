@@ -1,4 +1,7 @@
-import Stories from "./Stories"
+import MiniProfile from "./MiniProfile/MiniProfile"
+import Posts from "./posts/Posts"
+import Stories from "./stories/Stories"
+import Suggestions from "./Suggestions/Suggestions"
 
 interface FeedProps {
 
@@ -6,15 +9,18 @@ interface FeedProps {
 
 const Feed = ({ }: FeedProps) => {
   return (
-    <main className="grid grid-cols-1 m-auto md:grid-cols-2 md:max-w-3xl xl-grid-cols-3 xl:max-w-6xl">
+    <main className="grid grid-cols-1 md:grid-cols-3 md:max-w-5xl xl-grid-cols-3 xl:max-w-6xl mx-auto">
       <section className="col-span-2">
         <Stories />
+        <Posts />
       </section>
-      {/* Posts */}
 
-      <section></section>
-      {/* MiniProfile */}
-      {/* Suggestions */}
+      <section className="hidden md:inline-grid">
+        <div className="fixed top-20 mr-5">
+          <MiniProfile />
+          <Suggestions />
+        </div>
+      </section>
     </main>
   )
 }
