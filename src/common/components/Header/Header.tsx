@@ -40,7 +40,7 @@ const Header = ({ }: HeaderProps) => {
           </div>
           <UserGroupIcon className="navBtn" />
           <HeartIcon className="navBtn" />
-          <div className="relative w-9 h-9 border-red-500 border-2 rounded-full p-[1.5px]">
+          <div className="relative w-9 h-9  border rounded-full p-[1.5px]">
             <Image className="rounded-full cursor-pointer" layout="fill" priority objectFit="contain" src={"/assets/4.jpg"} alt="profile-pic" draggable="false" />
           </div>
         </div>
