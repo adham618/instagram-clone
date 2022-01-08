@@ -1,4 +1,5 @@
 import { signIn as signinprovider, getProviders } from "next-auth/react"
+import Head from "next/head"
 import Image from "next/image"
 import Header from "../../common/components/Header/Header"
 
@@ -15,6 +16,10 @@ const signin = ({ providers }: signinProps) => {
 
   return (
     <>
+      <Head>
+        <title>Sign In</title>
+        <meta name="description" content="Sign In Page" />
+      </Head>
       <Header />
       <div className="flex flex-col items-center justify-center min-h-screen py-2 -mt-36 px-14 text-center">
         <Image src={"/insta.svg"} width={400} height={200} alt="instagram-logo" draggable="false" />
