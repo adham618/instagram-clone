@@ -7,11 +7,11 @@ export default NextAuth({
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID as any,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as any,
-      authorization: process.env.NEXTAUTH_URL
     })
 
     // ...add more providers here
   ],
+  secret: process.env.JWT_SERECT,
   pages: {
     signIn: '/auth/signin',
     // signOut: '/auth/signout',
