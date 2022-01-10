@@ -1,6 +1,7 @@
 # Instagram  Clone
 
-![screenshot](https://user-images.githubusercontent.com/88515844/147889737-19f6a710-b866-40fd-a3f6-ec54dce53.png)
+![screenshot2](https://user-images.githubusercontent.com/88515844/148781874-91105a18-934b-4b55-b5c8-9b66fd9c6c91.png)
+![screenshot3](https://user-images.githubusercontent.com/88515844/148781887-b58e0124-8f52-4f17-b0bf-9e924b0cb14f.png)
 
 ## **[Live Demo](https://instagram-clone-ruddy.vercel.app/api/auth/error)**
 
@@ -33,14 +34,17 @@ Instagram Clone with nextjs, typescript, tailwind CSS, Firebase v9, NextAuth, Re
 ```sh
 ├── src                                # Src Folder
     ├── common                         # Common Folder
+        ├── atoms                      # Atoms Folder
         ├── components                 # Reusabble parts
-            ├── Avater                 # Avater component
+            ├── Feed                   # Feed component
             ├── Header                 # Header component
-            ├── SearchResults          # SearchResults component
-            ├── Footer                 # Footer component
+            ├── Modal                  # Modal component
         ├── utils                      # utils component
-    ├── styles
+    ├── styles                         # styles Folder
+    ├── types                          # Types Folder
     ├── pages                          # Application views
+        ├── api                        # API Folder
+           ├── auth                    # Auth Foler
 ```
 
 ## Setup
