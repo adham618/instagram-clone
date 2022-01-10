@@ -2,7 +2,7 @@
 
 ![screenshot](https://user-images.githubusercontent.com/88515844/147889737-19f6a710-b866-40fd-a3f6-ec54dce53.png)
 
-## **[Live Demo](https://google-clone-ruddy.vercel.app)**
+## **[Live Demo](https://instagram-clone-ruddy.vercel.app/api/auth/error)**
 
 ## Introduction
 
