@@ -37,7 +37,6 @@ const signin = ({ providers }: signinProps) => {
     </>
   )
 }
-export default signin
 
 export async function getServerSideProps() {
   const providers = await getProviders()
@@ -45,3 +44,8 @@ export async function getServerSideProps() {
     props: { providers },
   }
 }
+
+export default signin
+
+
+
